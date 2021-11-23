@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+}
+  
+body{
+    margin: 0px;
+    font-family: 'segoe ui';
+}
+/*
+    style topNavbar
+*/
+.topNavbar {
+    height: 50px;
+    width: 100%;
+    background-color: #1177ca;
+    position: relative;
+}
+.topNavbar a{
+    color:white;
+}
+/*
+    style card section flexbox starts here
+*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #cccccc;
+    margin-top: 20px;
+}
+.flex-container > #card-id {
+    background-color: #ffffff;
+    width:30%;
+    height: 400px;
+    margin: 2px;
+    /*text-align: center;*/
+    line-height: 30px;
+    font-size: 20px;
+    margin:20px 0px 0px 10px;
+}
+/*
+    style card section flexbox ends here
+*/
+.flex-container #card-id{
+    background-color:#ffffff;
+    border: 1px solid gray;
+}
+
+.flex-container #card-id .checked{
+    /*color:blue;*/
+    color: #00334d;;
+}
+/*
+    style card button
+*/
+.flex-container #card-id .card-button{
+    background-color: orange;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 80px;
+    /*padding: 14px 28px;*/
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 70%;
+    margin-right: 20px;
+    /*margin:0px 20px 0px 70%;*/
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+/*
+    style buttom text
+*/
+.flex-container #card-id #buttom-text{
+    font-size: 10px;    
+}
+.flex-container #card-id p{
+    font-size: 12px;
+}
+/*
+    style card text content
+*/
+.card-text{
+    color: black;
+    color: #241c31;
+    padding:3px 3px 3px 3px;
+    margin-left: 10px 0px 0px 8px;
+   
+
+}
+.id-text{
+    float: right;
+    margin-right: 0px 5px 5px 0px;
+}
+/*
+*/
+@media only screen and (max-width: 900px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+    }
+    .flex-container > #card-id {
+        background-color: #ffffff;
+        width:100%;
+        margin: 2px;
+       /* text-align: center;*/
+        line-height: 30px;
+        font-size: 20px;
+    }
+  }
+/*
+   style the buttons on the image
+*/
+.image-container{
+    background-color: #1177ca;
+    position: relative;
+}
+.image-container .topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background-color: #f2f2f2;
+    color:#000;
+    line-height: 26px;
+    font-size: 11px;
+    border-radius: 2px;
+    padding:4px 4px 3px 4px;
+}
+.image-container .left-buttom{
+    position: absolute;
+    top: 8px;
+    right: 70%;
+    top:70%;
+    background-color: #f2f2f2;
+    color:#000;
+    font-size: 11px;
+    border-radius: 5px;
+    padding:4px 4px 3px 4px;
+    font-weight: 900;
+    width: 100px;
+    font-family: "Open Sans",sans-serif;
+}
+.image-container .right-buttom{
+    position: absolute;
+    top: 8px;
+    right: 10%;
+    top:70%;
+   /* background-color: #174f4f;*/
+    background-color:#1a1a1a;
+    color:white;
+    border-radius: 10px;
+    padding:4px 4px 3px 4px;
+    font-weight: 900;
+    width: 35px;
+    font-family: "Open Sans",sans-serif;
+    text-align: center;
+    margin-right: 3px;
+}
+.image-container .right-buttom-1{
+    position: absolute;
+    top: 8px;
+    right: 1%;
+    top:70%;
+    /*background-color:#00334d;*/
+    background-color:#1a1a1a;
+    color:white;
+    border-radius: 10px;
+    padding:4px 4px 3px 4px;
+    font-weight: 900;
+    width: 35px;
+    font-family: "Open Sans",sans-serif;
+    text-align: center;
+}
+
+.image-container .topright i{
+      color:black
+}
+.buttom-text{
+    margin-bottom: 50px;
+}
+
+/*
+    top navbar right
+*/
