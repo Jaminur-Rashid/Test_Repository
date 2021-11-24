@@ -236,94 +236,9 @@ body {
   height: 100px;
   width: 100%;
 }
+
 /*
-    place auto complete style
-*/
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-#map {
-  height: 100%;
-}
-
-/* Optional: Makes the sample page fill the window. */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-#description {
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: 300;
-}
-
-#infowindow-content .title {
-  font-weight: bold;
-}
-
-#infowindow-content {
-  display: none;
-}
-
-#map #infowindow-content {
-  display: inline;
-}
-
-.pac-card {
-  background-color: #fff;
-  border: 0;
-  border-radius: 2px;
-  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
-  margin: 10px;
-  padding: 0 0.5em;
-  font: 400 18px Roboto, Arial, sans-serif;
-  overflow: hidden;
-  font-family: Roboto;
-  padding: 0;
-}
-
-#pac-container {
-  padding-bottom: 12px;
-  margin-right: 12px;
-}
-
-.pac-controls {
-  display: inline-block;
-  padding: 5px 11px;
-}
-
-.pac-controls label {
-  font-family: Roboto;
-  font-size: 13px;
-  font-weight: 300;
-}
-
-#pac-input {
-  background-color: #fff;
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: 300;
-  margin-left: 12px;
-  padding: 0 11px 0 13px;
-  text-overflow: ellipsis;
-  width: 400px;
-}
-
-#pac-input:focus {
-  border-color: #4d90fe;
-}
-
-#title {
-  color: #fff;
-  background-color: #4d90fe;
-  font-size: 25px;
-  font-weight: 500;
-  padding: 6px 12px;
-}
-/*
-    dropdwon counter
+    style dropdwon guest counter
 */
 .dropbtn {
     background-color:#ffffff;
@@ -342,8 +257,16 @@ body {
   .dropdown {
     position: relative;
     display: inline-block;
+    margin-right: 30px;
+    background-color: white;
+    border:1px solid black;
   }
-  
+  .container-fluid input{
+      margin-right: 10px;
+  }
+  .container-fluid button{
+    margin-right: 10px;
+}
   .dropdown-content {
     display: none;
     position: absolute;
@@ -364,6 +287,7 @@ body {
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+  /*
   .adetsay {
     clear: both;
     margin: 1em 0;
@@ -373,9 +297,7 @@ body {
     background-color:#ffffff;
   }
   .adetsay .guest-button{
-    /*margin-right:40px;*/
     height:50px;
-    border-radious:50%;
     font-weight:400;
     margin-left:10px;
   }
@@ -387,6 +309,7 @@ body {
     outline: none;
     padding: 1em;
     font-size: 1em;
+    border:1px red;
   }
   
   .adetsay input[type='button'] {
@@ -420,6 +343,65 @@ body {
     border-radious:5px;
     
   }
+  */
+  .adetsay {
+    clear: both;
+    margin: 1em 0;
+    position: relative;
+    height:200px;
+    width:400px;
+    background-color:#ffffff;
+  }
+  .adetsay .guest-button{
+    /*margin-right:40px;*/
+    height:50px;
+    border-radious:50%;
+    font-weight:400;
+    margin-left:10px;
+  }
+  
+  .adetsay input{
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    margin: 40px 30px 0px 30px ;
+    outline: none;
+    padding: 1em;
+    font-size: 1em;
+  }
+  
+  .adetsay input[type='button'] {
+    cursor: pointer;
+    position: relative;
+    background: white;
+    height: 40px;
+    padding: 0;
+    width:40px;
+    font-weight: bold;
+    -webkit-appearance: button;
+    background-color:white;
+    border:2px solid orange;
+    border-radius: 50%;  
+  }
+  
+  
+  .adetsay input[type='text'] {
+    position: relative;
+    height: 40px;
+    left: -5px;
+    text-align: center;
+    width: 70px;
+    display:inline block;
+    margin: 0;
+    resize: vertical;
+    background-color:white;
+  }
+  
+  .barti {
+    left: -10px;
+    margin-left:200px;
+    border-radious:5px;
+    
+  }
   /*
       style apply button
   */
@@ -430,4 +412,76 @@ body {
     width:60px;
     background-color:orange;
   }
+  
+  /*
+      style apply button
+  */
+  .button-container .apply{
+    text-align:center;
+    margin:50px 0px 0px 250px ;
+    height:35px;
+    width:60px;
+    background-color:orange;
+  }
+  /*
+  style price range slider
+  */
+  .price-range-slider {
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border: 2px solid black;
+    float: left;
+    padding: 10px 20px;
+ }
+  .price-range-slider .range-value {
+    margin: 0;
+ }
+  .price-range-slider .range-value input {
+    width: 100%;
+    background: none;
+    color: #000;
+    color: black;
+    font-size: 16px;
+    font-weight: initial;
+    box-shadow: none;
+    border: none;
+    margin: 10px 0 20px 0;
+ }
+  .price-range-slider .range-bar {
+    border: none;
+    background: #000;
+    height: 3px;
+    width: 96%;
+    margin-left: 8px;
+ }
+  .price-range-slider .range-bar .ui-slider-range {
+    background: #06b9c0;
+    background: #80ffdf;
+ }
+  .price-range-slider .range-bar .ui-slider-handle {
+    border: none;
+    border-radius: 25px;
+    background: #fff;
+    border: 2px solid #06b9c0;
+    height: 17px;
+    width: 17px;
+    top: -0.52em;
+    cursor: pointer;
+ }
+  .price-range-slider .range-bar .ui-slider-handle + span {
+    background: #06b9c0;
+ }
+ /*--- /.price-range-slider ---*/
+ /*
+     style search and filter button
+ */
+ #search-btn{
+   background-color:#364d6a;
+   width: 150px;
+ }
+ #filter-btn{
+  background-color:#ff6600
+  width: 150px;
+}
   
